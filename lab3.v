@@ -18,7 +18,7 @@ generate
                 2: assign HEX2[6]=KEY, HEX2[7]=KEY; 
                 3: assign HEX3[1]=KEY, HEX3[4]=KEY; 
                 4: assign HEX4[6]=KEY, HEX4[7]=KEY; 
-                5: assign HEX5[4]=KEY, HEX5[5]=KEY; 
+                5: assign HEX5[4]=KEY, HEX5[5]=KEY, HEX4[7]=KEY; 
 
                 endcase
         end 
