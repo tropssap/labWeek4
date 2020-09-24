@@ -1,0 +1,15 @@
+module lab3
+(
+	input [1:0] KEY, //keys
+	output [9:0] LED, //leds for MAX 10
+	//[11:0] for Cyclone IV
+	output [47:0] HEX //displays
+);
+genvar i;
+	generate
+		for (i=0; i<9; i=i+2) //for MAX 10
+		//i<11 for Cyclone IV
+	begin: gen
+		assign LED[i]=~KEY[1];
+	end
+endgenerate
